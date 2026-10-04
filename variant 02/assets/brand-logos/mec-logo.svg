@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 52" width="160" height="52">
+  <rect width="160" height="52" rx="6" fill="#005A36"/>
+  <!-- Mountain Peak Emblem -->
+  <path d="M24 37L36 17l6.5 10.5 4-6.5L58 37h-7.5l-8-13-4 6.5-6.5-10.5L28 37H24z" fill="#FFFFFF"/>
+  <!-- MEC Bold Typography -->
+  <text x="68" y="36" font-family="'Figtree', 'Montserrat', 'Arial Black', sans-serif" font-size="25" font-weight="900" fill="#FFFFFF" letter-spacing="2.5">MEC</text>
+</svg>

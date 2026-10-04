@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Investments — Founded in Toronto in 1999</title>
+  <meta name="description" content="Value is created where others hesitate. We believe enduring value is found in uncertainty, built through execution, and realized through time.">
+  <link rel="icon" href="https://smartinvestmentsholding.com/wp-content/uploads/2024/03/cropped-Favicon-32x32.png" sizes="32x32">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Site Header (Live Site Visual Style)
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="header-logo" aria-label="Smart Investments Home">
+        <img src="assets/images/logo.png" alt="Smart Investments Logo">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">About Us</a></li>
+          <li><a href="commercial-real-estate.html" class="nav-link">Real Estate</a></li>
+          <li><a href="consumer-brands.html" class="nav-link">Consumer Goods &amp; Services</a></li>
+          <li><a href="https://smartinvestmentsholding.com/careers/" class="nav-link" target="_blank" rel="noopener">Careers</a></li>
+          <li><a href="https://smartinvestmentsholding.com/contact-us/" class="nav-link" target="_blank" rel="noopener">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       01. Hero Section (Editorial Typography + Framer AutoCover Highlight)
+       ========================================================================= -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <span class="kicker reveal-on-scroll" style="color: #111111;">FOUNDED IN TORONTO IN 1999</span>
+        
+        <h1 class="hero-title reveal-on-scroll reveal-delay-1">
+          Value is created
+          <span class="statement-highlight-wrap hero-highlight-wrap" id="heroHighlightWrap">
+            <span class="statement-highlight-box hero-highlight-box" id="heroHighlightBox">
+              <!-- Particle Canvas Layer for Interactive Hover -->
+              <canvas class="statement-particles-canvas hero-particles-canvas" id="heroParticlesCanvas"></canvas>
+              
+              <!-- Scanning Laser Beams -->
+              <span class="statement-scan-line scan-line-1"></span>
+              <span class="statement-scan-line scan-line-2"></span>
+              <span class="statement-scan-line scan-line-3"></span>
+              
+              <!-- Highlighted Text (Black in resting state, White on hover) -->
+              <span class="statement-highlight-text hero-highlight-text">where others hesitate.</span>
+            </span>
+            
+            <!-- 4 Corner Pulsing Dots (Reference: framer autocover-pulse) -->
+            <span class="corner-dot dot-tl"></span>
+            <span class="corner-dot dot-tr"></span>
+            <span class="corner-dot dot-br"></span>
+            <span class="corner-dot dot-bl"></span>
+          </span>
+        </h1>
+        
+        <p class="section-subtitle hero-subtitle reveal-on-scroll reveal-delay-2">
+          We believe enduring value is found in uncertainty,<br>built through execution, and realized through time.
+        </p>
+
+        <div class="hero-actions reveal-on-scroll reveal-delay-3">
+          <a href="#businesses" class="btn btn-gold">
+            Our Businesses ↓
+          </a>
+          <a href="#journey" class="btn btn-outline-dark">
+            Our Journey
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       02. Video Module (Smart Investments 2026 Video - Scroll Expanding Experience)
+       ========================================================================= -->
+  <section class="section media-section" id="video">
+    <div class="container media-header-container reveal-on-scroll">
+      <span class="kicker" style="color: var(--color-primary);">SMART INVESTMENTS 2026</span>
+      <h2 class="section-title section-title-dark">Corporate <span class="text-gold">Overview.</span></h2>
+      <p class="section-subtitle" style="color: #9CA3AF; max-width: 620px; margin: 0 auto;">
+        Discover how our multi-decade investment thesis drives resilient value creation across Canadian markets.
+      </p>
+    </div>
+    
+    <!-- Scroll-Driven Expanding Video Container -->
+    <div class="video-expand-wrapper reveal-on-scroll reveal-delay-1" id="videoExpandWrapper">
+      <div class="video-box-wrap" id="videoBoxWrap">
+        <video id="corporateVideo" muted playsinline loop autoplay preload="metadata">
+          <source src="../SmartInvestmentLtd_2026 2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        <!-- Subtle Floating Controls (Play/Pause and Mute/Unmute) -->
+        <div class="video-controls-bar" id="videoControlsBar">
+          <button class="video-ctrl-btn" id="videoPlayPauseBtn" aria-label="Play or pause video">
+            <svg class="icon-pause" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+            <svg class="icon-play" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            <span class="ctrl-text" id="videoPlayText">Pause</span>
+          </button>
+          <button class="video-ctrl-btn" id="videoSoundToggle" aria-label="Toggle sound">
+            <svg class="icon-muted" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+            <svg class="icon-sound" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+            <span class="ctrl-text" id="videoSoundText">Unmute</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       03. Philosophy / Values (Stepped Process Path — Image Reference)
+       ========================================================================= -->
+  <section class="section" id="philosophy" style="background-color: #FFFFFF; padding-top: 5rem; padding-bottom: 6rem;">
+    <div class="container">
+      <div class="staggered-process-wrapper">
+        
+        <!-- Stepped SVG Arcs Connection -->
+        <div class="staggered-svg-container reveal-on-scroll" aria-hidden="true">
+          <svg class="staggered-svg" viewBox="0 0 1000 480" preserveAspectRatio="none">
+            <!-- 1. Base light dashed arc path -->
+            <path class="arc-base" d="M 120 60 C 240 10, 380 20, 500 200 C 620 135, 760 145, 880 340" />
+
+            <!-- 2. Yellow dashed segment that travels along the path -->
+            <path class="arc-travel-segment" d="M 120 60 C 240 10, 380 20, 500 200 C 620 135, 760 145, 880 340" />
+
+            <!-- 3. Solid black step dots positioned on the line -->
+            <circle class="step-node-dot" cx="120" cy="60" r="7" />
+            <circle class="step-node-dot" cx="500" cy="200" r="7" />
+            <circle class="step-node-dot" cx="880" cy="340" r="7" />
+          </svg>
+        </div>
+
+        <!-- Staggered Content Items (No Cards, Stepped Down) -->
+        <div class="staggered-grid">
+          <!-- Step 01 -->
+          <div class="staggered-item step-1 reveal-on-scroll reveal-delay-1">
+            <h3 class="staggered-title">
+              <span class="staggered-num">01)</span> Value from uncertainty.
+            </h3>
+            <p class="staggered-desc">
+              Opportunity often emerges when markets lack clarity and others step back.
+            </p>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="staggered-item step-2 reveal-on-scroll reveal-delay-2">
+            <h3 class="staggered-title">
+              <span class="staggered-num">02)</span> Value from execution.
+            </h3>
+            <p class="staggered-desc">
+              Ideas become valuable through discipline, operating knowledge and decisive action.
+            </p>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="staggered-item step-3 reveal-on-scroll reveal-delay-3">
+            <h3 class="staggered-title">
+              <span class="staggered-num">03)</span> Value from time.
+            </h3>
+            <p class="staggered-desc">
+              Patient ownership allows strong assets and businesses to reach their full potential.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       04. Who We Are (Project Split Card — Exact PDF Page 2 Copy)
+       ========================================================================= -->
+  <section class="split-layout-section" id="who-we-are">
+    <div class="container">
+      <div class="split-layout-grid">
+        <!-- Left Column: Image Card (Wider) -->
+        <div class="split-left-card reveal-on-scroll reveal-left">
+          <div class="split-left-image-wrap">
+            <img src="assets/images/team_photo.jpg" alt="Smart Investments Team">
+          </div>
+        </div>
+
+        <!-- Right Column: Standalone Bordered Card -->
+        <div class="split-right-card reveal-on-scroll reveal-right reveal-delay-1">
+          <div class="split-right-header">
+            <h3 class="split-right-title">Since 1999</h3>
+            <p class="split-right-subtitle">Our story began in Toronto.</p>
+          </div>
+
+          <div class="split-right-text-block">
+            <p>
+              Over more than two decades, Smart Investments has grown from its entrepreneurial roots into a Canadian private holding company. We invest our own capital, work alongside management teams and take a long-term approach to ownership.
+            </p>
+            <p>
+              Our businesses serve different customers and markets, but they are united by one philosophy: disciplined investment, active stewardship and enduring partnership.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       05. Two Focused Platforms (Expanding Step Cards — Reference: expandingstepcards.framer.website)
+       ========================================================================= -->
+  <section class="section expanding-step-section" id="businesses" style="background-color: #FFFFFF;">
+    <div class="container">
+      <div class="reveal-on-scroll" style="text-align: center; max-width: 820px; margin: 0 auto 3.5rem auto;">
+        <span class="kicker" style="color: #111111;">OUR BUSINESSES</span>
+        <h2 class="section-title">Two focused <span class="text-gold">platforms.</span></h2>
+        <p class="section-subtitle">
+          Each platform has its own strategy, audience and operating team.
+        </p>
+      </div>
+
+      <!-- Expanding Step Cards Container -->
+      <div class="expanding-cards-container reveal-on-scroll reveal-delay-1">
+        <!-- Step Card 01: Commercial Real Estate (Default Expanded) -->
+        <div class="step-card is-expanded" data-step="1">
+          <!-- Text Column (Always visible in both active and collapsed states) -->
+          <div class="step-card-text-col">
+            <span class="step-num-text">01</span>
+            
+            <div class="step-card-bottom-info">
+              <h3 class="step-card-heading">Commercial Real Estate</h3>
+              <p class="step-card-description">
+                Investment, ownership and active management of income-producing properties.
+              </p>
+              <a href="commercial-real-estate.html" class="step-explore-btn">
+                Explore Platform <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Media Column (Visible & large on active card) -->
+          <div class="step-card-media-col">
+            <div class="step-image-gallery">
+              <div class="gallery-primary-wrap">
+                <img src="assets/images timeline/13_step.png" alt="Woodbine Corporate Centre &amp; Office Campus" class="gallery-img">
+                <span class="gallery-tag">Office &amp; Campus</span>
+              </div>
+              <div class="gallery-secondary-col">
+                <div class="gallery-sub-wrap">
+                  <img src="assets/Garden City Photos/_E8A7011low.jpg" alt="Garden City Shopping Centre" class="gallery-img">
+                  <span class="gallery-tag">Retail Centres</span>
+                </div>
+                <div class="gallery-sub-wrap">
+                  <img src="assets/images timeline/4_step.png" alt="Commercial Real Estate Platform" class="gallery-img">
+                  <span class="gallery-tag">Real Estate Portfolio</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step Card 02: Consumer Brands & Manufacturing -->
+        <div class="step-card" data-step="2">
+          <!-- Text Column (Always visible in both active and collapsed states) -->
+          <div class="step-card-text-col">
+            <span class="step-num-text">02</span>
+            
+            <div class="step-card-bottom-info">
+              <h3 class="step-card-heading">Consumer Brands &amp; Manufacturing</h3>
+              <p class="step-card-description">
+                Long-term ownership and partnership across brands, retail and manufacturing.
+              </p>
+              <a href="consumer-brands.html" class="step-explore-btn">
+                Explore Platform <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Media Column (Visible & large on active card) -->
+          <div class="step-card-media-col">
+            <div class="step-image-gallery">
+              <div class="gallery-primary-wrap">
+                <img src="assets/images timeline/14_step.png" alt="Mountain Equipment Company (MEC)" class="gallery-img">
+                <span class="gallery-tag">Retail Brands</span>
+              </div>
+              <div class="gallery-secondary-col">
+                <div class="gallery-sub-wrap">
+                  <img src="assets/images timeline/9_step.png" alt="Roots Canada Heritage Brand" class="gallery-img">
+                  <span class="gallery-tag">Iconic Brands</span>
+                </div>
+                <div class="gallery-sub-wrap">
+                  <img src="assets/images timeline/2_step.png" alt="E.Star Apparel Manufacturing" class="gallery-img">
+                  <span class="gallery-tag">Manufacturing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       06. "Our Journey" (Contour Timeline — Reference: contour-timeline.framer.website)
+       ========================================================================= -->
+  <section class="section contour-timeline-section" id="journey" style="background-color: #f8f8f7;">
+    <div class="container">
+      <!-- Section Header Separated from Element & Centered -->
+      <div class="contour-header reveal-on-scroll">
+        <span class="kicker" style="color: #111111;">OUR JOURNEY</span>
+        <h2 class="section-title">26 Years of <span class="text-gold">Canadian Excellence.</span></h2>
+        <p class="section-subtitle">
+          Navigating pathways to success, while minimizing risks and maximizing returns.
+        </p>
+      </div>
+
+      <!-- Contour Timeline Stage Element -->
+      <div class="contour-timeline-stage reveal-on-scroll reveal-delay-1" id="contourTimelineStage">
+        
+        <!-- Timeline Navigation Controls (Prev / Next / Counter) -->
+        <div class="contour-nav-bar">
+          <span class="contour-step-counter" id="contourStepCounter">Milestone <span id="contourCurrentStepNum">01</span> / 14</span>
+          <div class="contour-nav-buttons">
+            <button class="contour-nav-btn contour-nav-prev" id="contourPrevBtn" aria-label="Previous milestone">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="contour-nav-btn contour-nav-next" id="contourNextBtn" aria-label="Next milestone">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Scrollable Track wrapper for Floating Card, SVG Curve and 14 Years -->
+        <div class="contour-scroll-wrapper" id="contourScrollWrapper">
+          <div class="contour-track-inner" id="contourTrackInner">
+            
+            <!-- Floating Active Milestone Card (Moves smoothly along track directly above curve) -->
+            <div class="contour-card-track" id="contourCardTrack">
+              <div class="contour-card" id="contourActiveCard">
+                <div class="contour-card-img-wrap">
+                  <img src="assets/images timeline/1_step.png" alt="Founded in Toronto" id="contourCardImg">
+                  <span class="contour-card-year-badge" id="contourCardYearBadge">1999</span>
+                </div>
+                <div class="contour-card-content">
+                  <span class="contour-card-kicker" id="contourCardKicker">FOUNDATION</span>
+                  <h3 class="contour-card-title" id="contourCardTitle">Founded in Toronto, Canada</h3>
+                  <p class="contour-card-desc" id="contourCardDesc">
+                    Smart Investments begins in Ontario with an entrepreneurial owner-investor mindset, deploying proprietary capital across Canadian opportunities.
+                  </p>
+                </div>
+                <!-- Stem connector linking card bottom directly to the curve apex -->
+                <div class="contour-card-stem"></div>
+              </div>
+            </div>
+
+            <!-- Contour SVG Curved Line -->
+            <div class="contour-svg-container" id="contourSvgContainer">
+              <svg class="contour-svg" id="contourSvgElement" viewBox="0 0 2100 65">
+                <!-- Smooth Bezier curve path -->
+                <path id="contourLinePath" class="contour-path" d="M 0 52 L 20 52 C 44 52, 51 14, 75 14 C 99 14, 106 52, 130 52 L 2100 52" />
+                <!-- Inactive node dots group (dynamically rendered) -->
+                <g id="contourNodesGroup"></g>
+                <!-- Active Crest Dot at peak of curve -->
+                <circle id="contourActiveDot" class="contour-active-dot" cx="75" cy="14" r="6.5" />
+              </svg>
+            </div>
+
+            <!-- 14 Milestone Year Labels Row (Fixed equal spacing) -->
+            <div class="contour-years-row" id="contourYearsRow">
+              <div class="contour-year-item active" data-index="0">
+                <span class="contour-year-num">1999</span>
+                <span class="contour-year-label">Toronto Inception</span>
+              </div>
+              <div class="contour-year-item" data-index="1">
+                <span class="contour-year-num">1999</span>
+                <span class="contour-year-label">E.Star Mfg</span>
+              </div>
+              <div class="contour-year-item" data-index="2">
+                <span class="contour-year-num">2003</span>
+                <span class="contour-year-label">Midland Clothing</span>
+              </div>
+              <div class="contour-year-item" data-index="3">
+                <span class="contour-year-num">2003</span>
+                <span class="contour-year-label">Real Estate</span>
+              </div>
+              <div class="contour-year-item" data-index="4">
+                <span class="contour-year-num">2007</span>
+                <span class="contour-year-label">Sparkling Design</span>
+              </div>
+              <div class="contour-year-item" data-index="5">
+                <span class="contour-year-num">2016</span>
+                <span class="contour-year-label">E.Star Dev</span>
+              </div>
+              <div class="contour-year-item" data-index="6">
+                <span class="contour-year-num">2016</span>
+                <span class="contour-year-label">WillowWood</span>
+              </div>
+              <div class="contour-year-item" data-index="7">
+                <span class="contour-year-num">2018</span>
+                <span class="contour-year-label">Lattelove</span>
+              </div>
+              <div class="contour-year-item" data-index="8">
+                <span class="contour-year-num">2020</span>
+                <span class="contour-year-label">Roots Canada</span>
+              </div>
+              <div class="contour-year-item" data-index="9">
+                <span class="contour-year-num">2021</span>
+                <span class="contour-year-label">Unisync Group</span>
+              </div>
+              <div class="contour-year-item" data-index="10">
+                <span class="contour-year-num">2021</span>
+                <span class="contour-year-label">Tilley Endurables</span>
+              </div>
+              <div class="contour-year-item" data-index="11">
+                <span class="contour-year-num">2023</span>
+                <span class="contour-year-label">Garden City Mall</span>
+              </div>
+              <div class="contour-year-item" data-index="12">
+                <span class="contour-year-num">2024</span>
+                <span class="contour-year-label">Woodbine Centre</span>
+              </div>
+              <div class="contour-year-item" data-index="13">
+                <span class="contour-year-num">2026</span>
+                <span class="contour-year-label">MEC Flagship</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       07. Editorial Statement (Interactive Framer AutoCover Highlight Component)
+       ========================================================================= -->
+  <section class="statement-band" id="statement">
+    <div class="container statement-container reveal-on-scroll">
+      <span class="kicker statement-kicker" style="color: #111111;">OUR CORE THESIS</span>
+      
+      <blockquote class="statement-text">
+        “Uncertainty creates the opportunity.
+        <span class="statement-highlight-wrap" id="statementHighlightWrap">
+          <span class="statement-highlight-box" id="statementHighlightBox">
+            <!-- Particle Canvas Layer for Interactive Hover -->
+            <canvas class="statement-particles-canvas" id="statementParticlesCanvas"></canvas>
+            
+            <!-- Scanning Laser Beams -->
+            <span class="statement-scan-line scan-line-1"></span>
+            <span class="statement-scan-line scan-line-2"></span>
+            <span class="statement-scan-line scan-line-3"></span>
+            
+            <!-- Highlighted Text (Gold in resting state, White on hover) -->
+            <span class="statement-highlight-text">Execution creates the value.</span>
+          </span>
+          
+          <!-- 4 Corner Pulsing Dots (Reference: framer autocover-pulse) -->
+          <span class="corner-dot dot-tl"></span>
+          <span class="corner-dot dot-tr"></span>
+          <span class="corner-dot dot-br"></span>
+          <span class="corner-dot dot-bl"></span>
+        </span>
+        Time allows it to endure.”
+      </blockquote>
+      <div class="statement-divider"></div>
+      <cite class="statement-cite">
+        SMART INVESTMENTS · TORONTO
+      </cite>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       08. Connect With Us (Exact PDF Page 3 Copy — Modern Cohesive Redesign)
+       ========================================================================= -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="contact-header reveal-on-scroll">
+        <span class="kicker" style="color: #111111;">CONNECT WITH US</span>
+        <h2 class="section-title">Start a <span class="text-gold">conversation.</span></h2>
+        <p class="section-subtitle">
+          Whether discussing strategic investment opportunities, joint ventures, or exploring careers, our leadership team is ready to connect.
+        </p>
+      </div>
+
+      <!-- Cohesive 2-Column Modern Grid -->
+      <div class="contact-grid">
+        <!-- Left Card: Headquarters & Direct Line -->
+        <div class="contact-card contact-card-light reveal-on-scroll reveal-left">
+          <div>
+            <h3 class="contact-card-heading">Toronto &amp; Markham Office</h3>
+            <p class="contact-card-intro">
+              Direct access to our Canadian executive leadership and operational management.
+            </p>
+
+            <div class="contact-info-list">
+              <!-- Phone -->
+              <div class="contact-info-item">
+                <div class="contact-icon-bubble">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="contact-info-content">
+                  <span class="contact-info-label">Direct Line</span>
+                  <a href="tel:905-754-0088,228" class="contact-info-value contact-phone-link">905-754-0088 ext. 228</a>
+                </div>
+              </div>
+
+              <!-- Address -->
+              <div class="contact-info-item">
+                <div class="contact-icon-bubble">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="contact-info-content">
+                  <span class="contact-info-label">Corporate Address</span>
+                  <span class="contact-info-value">7050 Woodbine Ave., Suite 400<br>Markham, Ontario, Canada L3R 4G8</span>
+                </div>
+              </div>
+
+              <!-- Schedule / Operations -->
+              <div class="contact-info-item">
+                <div class="contact-icon-bubble">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="contact-info-content">
+                  <span class="contact-info-label">Operating Hours</span>
+                  <span class="contact-info-value">Monday – Friday · 9:00 AM – 5:00 PM EST</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Card: Partnerships, Portals & Careers -->
+        <div class="contact-card contact-card-dark reveal-on-scroll reveal-right reveal-delay-1">
+          <div class="contact-dark-glow"></div>
+          <div>
+            <h3 class="contact-card-heading text-white">Partner With Smart Investments</h3>
+            <p class="contact-card-intro text-muted-light">
+              We welcome dialogue with operating partners, property owners, and exceptional leaders looking to build enduring Canadian enterprises.
+            </p>
+
+            <div class="contact-action-list">
+              <a href="https://smartinvestmentsholding.com/contact-us/" target="_blank" rel="noopener" class="btn btn-gold btn-full-width">
+                Send Corporate Inquiry ↗
+              </a>
+              <a href="https://smartinvestmentsholding.com/careers/" target="_blank" rel="noopener" class="btn btn-outline-white btn-full-width">
+                Explore Careers ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       09. Footer (Exact PDF Page 4 Copy + Preserved Scope Links)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="reveal-on-scroll reveal-delay-1">
+          <img src="assets/images/logo.png" alt="Smart Investments" style="height: 44px; filter: brightness(0) invert(1); margin-bottom: 1.5rem;">
+          <p style="font-size: 15px; line-height: 1.6; color: #B0B5C0; max-width: 320px;">
+            SMART INVESTMENTS GROUP OF COMPANIES
+          </p>
+          <p style="font-size: 14px; color: var(--color-primary); margin-top: 0.5rem;">
+            Founded in Toronto in 1999
+          </p>
+        </div>
+
+        <div class="reveal-on-scroll reveal-delay-2">
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-menu-links">
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="commercial-real-estate.html">Commercial Real Estate</a></li>
+            <li><a href="consumer-brands.html">Consumer Brands &amp; Manufacturing</a></li>
+            <li><a href="#journey">Our Journey</a></li>
+          </ul>
+        </div>
+
+        <div class="reveal-on-scroll reveal-delay-3">
+          <div class="footer-col-title">Corporate</div>
+          <ul class="footer-menu-links">
+            <li><a href="https://smartinvestmentsholding.com/careers/" target="_blank" rel="noopener">Careers (Existing) ↗</a></li>
+            <li><a href="https://smartinvestmentsholding.com/contact-us/" target="_blank" rel="noopener">Contact Us (Existing) ↗</a></li>
+          </ul>
+        </div>
+
+        <div class="reveal-on-scroll reveal-delay-4">
+          <div class="footer-col-title">smartinvestmentsholding.com</div>
+          <p style="font-size: 14px; line-height: 1.6; color: #D1D5DB; margin-bottom: 0.5rem;">
+            7050 Woodbine Ave., Suite 400<br>Markham, Ontario, Canada L3R 4G8
+          </p>
+          <p style="font-size: 14px; color: var(--color-primary); font-weight: 700;">
+            905-754-0088 ext. 228
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar reveal-on-scroll reveal-delay-2">
+        <div>
+          &copy; 2026 Smart Investments
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="https://smartinvestmentsholding.com" style="color: #7A7A7A;">smartinvestmentsholding.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
